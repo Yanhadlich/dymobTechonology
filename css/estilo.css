@@ -11,7 +11,7 @@ html, body, #home {
 }
 
 body {
-	background: url(../imagens/Home/background.svg),
+	background: url(../imagens/Home/background2.jpg),
 				linear-gradient(10deg,#ff4169,#7c26f8);
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
@@ -74,7 +74,7 @@ nav.navbar-transparente {
 
 .btn-branco:hover {
 	background-color: white;
-	color: rgb(138, 17, 138);
+	color: black;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -99,8 +99,36 @@ nav.navbar-transparente {
 }
 
 #servicos h2, h3 {
-	color: #5558e9;
+	color: #9bf0e1;
 }
+
+.service-box{
+	text-align: center;
+	margin-bottom: 50px;
+  }
+  
+  .service-box i, .service-box h4{
+	transition: .5s;
+  }
+  
+  .service-box i{
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #fff;
+  }
+  
+  .user-icon{
+	color: #a7a3a3;
+  }
+  
+  .service-box h4{
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  .service-box:hover > i, .service-box:hover > h4{
+	color: #65DAF9;
+  }
 
 #recursos h2 {
 	color: white;
@@ -108,6 +136,7 @@ nav.navbar-transparente {
 
 #recursos h3 {
 	color: #9bf0e1;
+	padding: 20px;
 }
 
 .albuns {
