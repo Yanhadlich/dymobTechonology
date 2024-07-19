@@ -11,9 +11,8 @@ html, body, #home {
 }
 
 body {
-	background: url(../imagens/capa.png),
-				url(../imagens/ruido.png),
-				linear-gradient(50deg,#ff4169,#7c26f8);
+	background: url(../imagens/Home/background.svg),
+				linear-gradient(10deg,#ff4169,#7c26f8);
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
 }
@@ -75,12 +74,14 @@ nav.navbar-transparente {
 
 .btn-branco:hover {
 	background-color: white;
-	color: black;
+	color: rgb(138, 17, 138);
 }
 
 .carousel-control-next, .carousel-control-prev {
 	width: 5%;
 }
+
+
 
 /* Estrutura conteúdos
 -----------------------------*/
@@ -90,7 +91,7 @@ nav.navbar-transparente {
 }
 
 #servicos {
-	background: white;
+	background: rgb(67, 65, 68);
 }
 
 #recursos {
@@ -98,7 +99,7 @@ nav.navbar-transparente {
 }
 
 #servicos h2, h3 {
-	color: #7c25f8;
+	color: #5558e9;
 }
 
 #recursos h2 {
@@ -118,6 +119,20 @@ nav.navbar-transparente {
     -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
     transform: rotate(30deg);
 	padding-left: 80px;
+}
+
+#about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li{
+	line-height: 30px;
+}
+
+#about-list i {
+	color: #65DAF9;
+    margin-right: 15px;
 }
 
 /* Rodapé
@@ -174,7 +189,10 @@ h3 {
 	letter-spacing: -0.04em;
 }
 
-
+p, li {
+    color: #ffffff;
+    font-size: 15px;
+}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
