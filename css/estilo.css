@@ -13,16 +13,16 @@ body {
 
 .whatsapp-icon {
     position: fixed;
-    bottom: 20px;
-    right: 5%;
+    bottom: 10px;
+    right: 10%;
     z-index: 1000;
-	margin-bottom: 2%;
-  }
-  .whatsapp-icon img {
-    width: 60px;
-    height: 60px;
+}
+
+.whatsapp-icon img {
+    width: 50px;
+    height: 50px;
 	background-color: green;
-  }
+}
 
 /* Barra de navegação
 -----------------------------*/
@@ -118,28 +118,28 @@ nav.navbar-transparente {
 	margin-bottom: 50px;
   }
   
-  .service-box i, .service-box h4{
+.service-box i, .service-box h4{
 	transition: .5s;
-  }
-  
-  .service-box i{
+}
+
+.service-box i{
 	font-size: 36px;
 	margin-bottom: 20px;
 	color: #fff;
-  }
-  
-  .user-icon{
+}
+
+.user-icon{
 	color: #a7a3a3;
-  }
-  
-  .service-box h4{
+}
+
+.service-box h4{
 	font-size: 24px;
 	margin-bottom: 20px;
-  }
-  
-  .service-box:hover > i, .service-box:hover > h4{
+}
+
+.service-box:hover > i, .service-box:hover > h4{
 	color: #65DAF9;
-  }
+}
 
 #recursos h2 {
 	color: white;
@@ -222,6 +222,7 @@ h2 {
 	font-size: 3em;
 	font-weight: 700;
 	letter-spacing: -0.04em;
+	color: white;
 }
 
 h3 {
