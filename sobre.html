@@ -18,75 +18,52 @@
   </head>
   <body>
     
-    <header><!-- inicio Cabecalho -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
         <div class="container">
           
-          <a href="#" class="navbar-brand">
-            <img src="img/logo.png" width="142">
+          <a href="index.html" class="navbar-brand">
+            <img src="imagens/home/logo dymob png.svg" width="142">
           </a>
 
           <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars text-white"></i>
           </button>
 
           <div class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a href="" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
               </li>
+
+              <li class="nav-item divisor"></li>
+
               <li class="nav-item">
-                <a href="" class="nav-link">Recursos</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Benefícios</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Preços</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="btn btn-outline-light ml-4">Entrar</a>
+                <a href="https://wa.me/5547989166187?text=Olá,%20tudo%20bem?%20Preciso%20de%20um%20orçamento" class="nav-link">Entre em contato</a>
               </li>
             </ul>
           </div>
-
         </div>
       </nav>
-    </header><!--/fim Cabecalho -->
+    </header>
+
+    <a href="https://wa.me/5547989166187?text=Olá,%20tudo%20bem?%20Preciso%20de%20um%20orçamento" class="whatsapp-icon" target="_blank">
+      <img src="imagens/whatsapp-icon.png" alt="WhatsApp" class="img-fluid rounded-circle shadow-lg ">
+    </a>
 
     <section id="home"><!-- Início seção home -->
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-evenly">
           <div class="col-md-6 d-flex"><!-- Textos da seção -->
             <div class="align-self-center">
-              <h1 class="display-4">Suas contas, descomplicadas</h1>
-              <p>
-                Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira.
-              </p>
-
-              <form class="mt-4 mb-4">
-                <div class="input-group input-group-lg">
-                  <input type="text" placeholder="Seu e-mail" class="form-control">
-                  <div class="input-group-append">
-                    <button type="button" class="btn btn-primary">Cadastre-se</button>
-                  </div>
-                </div>
-              </form>
-
-              <p>Disponível para
-                <a href="" class="btn btn-outline-light">
-                  <i class="fab fa-android fa-lg"></i>
-                </a>
-                <a href="" class="btn btn-outline-light">
-                  <i class="fab fa-apple"></i>
-                </a>
-              </p>
-
+              <h1>Dymob Technology, Sobre Nós</h1>
+              <div class="row justify-content-end">
+                <p>
+                  Bem-vindo à Dymob Technology, onde transformamos suas ideias em experiências digitais extraordinárias. Fundada em março de 2024 por Yan Hadlich e Guilherme Germano, nossa empresa nasceu com o propósito de redefinir a indústria de desenvolvimento de sites, promovendo transparência, honestidade e inovação. <br/> Não apenas criamos sites, criamos experiências que ajudam nossos clientes a crescer e prosperar no mundo digital. Junte-se a nós nessa jornada e veja como podemos transformar sua visão em realidade.
+                </p>
+              </div>
             </div>
           </div><!--/fim textos da seção -->
-          <div class="col-md-6 d-none d-md-block">
-            <img src="img/capa-mulher.png">
-          </div>
         </div>
       </div>
     </section><!--/fim seção home -->
@@ -157,34 +134,41 @@
       </div>
     </section><!--/FIM seção recursos -->
 
-    <footer class="mt-4 mb-4">
+    <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <p>
-              <a href="">Home</a>
-              <a href="">Recursos</a>
-              <a href="">Benefícios</a>
-              <a href="">Preços</a>
-            </p>
+          <div class="col-md-2">
+              <a href="index.html">
+                  <img src="imagens/home/logo dymob png.svg" width="142">
+              </a>
           </div>
-          <div class="col-md-4 d-flex justify-content-end">
-            <a href="" class="btn btn-outline-dark">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="" class="btn btn-outline-dark ml-2">
-              <i class="fab fa-twitter"></i>
-            </a>
+          <div class="col-md-2">
+            <h4>company</h4>
+            <ul class="navbar-nav">
+              <li><a href="about-us.html">Sobre</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>comunidades</h4>
+            <ul class="navbar-nav">
+              <li><a href="#testimonials-slider1-3">Desenvolvedores</a></li>
+              <li><a href="">Marcas</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Exemplares</h4>
+            <ul class="navbar-nav">
+              <li><a href="https://dymobtech.netlify.app/">Site exemplo</a></li>
+            </ul>
+          </div>
+          <div class="col-md-8 d-flex justify-content-end">            
             <a href="" class="btn btn-outline-dark ml-2">
               <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="btn btn-outline-dark ml-2">
-              <i class="fab fa-youtube"></i>
             </a>
           </div>
         </div>
       </div>
-    </footer>
+  </footer>
 
 
     <!-- JavaScript (Opcional) -->
