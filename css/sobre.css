@@ -3,26 +3,13 @@
 html, body, #home {
 	height: 100%;
 	overflow-x: hidden;
+	color: white;
 }
 
 body {
-	font-family: Helvetica,Arial,sans-serif;
-}
-
-#home {
 	background: url(../imagens/Home/background2.jpg);
 	background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
-}
-
-#home p h1 {
-	text-align: center;
-	
-}
-
-.caixa {
-	padding: 60px 0;
-	border-bottom: 1px solid #e5e5e5;
 }
 
 .whatsapp-icon {
@@ -35,34 +22,6 @@ body {
 .whatsapp-icon img {
     width: 50px;
     height: 50px;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-	#home {
-		margin-top: 14.4%;
-	}
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-	h1 {
-		font-size: 4em;
-	}
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-	h1 {
-		font-size: 5em;
-	}
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-	h1 {
-		font-size: 6em;
-	}
 }
 
 /* Barra de navegação
@@ -91,33 +50,131 @@ nav.navbar-transparente {
 	margin: 12px 15px;
 }
 
-/* Tipografia
+/* Capa
 -----------------------------*/
-h1 {
-	font-weight: 900;
-	letter-spacing: -0.05em;
+.capa {
+	text-align: center;
+}
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+
+
+/* Estrutura conteúdos
+-----------------------------*/
+.caixa {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#servicos {
+	background: #fff;
+}
+
+#recursos {
+	color: white;
+}
+
+#servicos h2, h3 {
+	color: #000;
+}
+
+#servicos p {
+	color: #000;
+}
+
+.service-box{
+	text-align: center;
 	margin-bottom: 50px;
+  }
+  
+.service-box i, .service-box h4{
+	transition: .5s;
+}
+
+.service-box i{
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.user-icon{
+	color: #a7a3a3;
+}
+
+.service-box h4{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h4{
+	color: #65DAF9;
+}
+
+#recursos h2 {
 	color: white;
 }
 
-h2 {
-	font-size: 3em;
-	font-weight: 700;
-	letter-spacing: -0.04em;
-	color: white;
+#recursos h3 {
+	color: #9bf0e1;
+	padding: 20px;
 }
 
-h3 {
-	font-size: 2em;
-	font-weight: 700;
-	letter-spacing: -0.04em;
+.albuns {
+	padding: 10px 0;
 }
 
-p, li {
-    color: #ffffff;
-    font-size: 15px;
+.rotacionar {
+	-ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+	padding-left: 80px;
 }
 
+#about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li{
+	line-height: 30px;
+	color:#000;
+}
+
+#about-list i {
+	color: #65DAF9;
+    margin-right: 15px;
+}
 
 /* Rodapé
 -----------------------------*/
@@ -151,3 +208,71 @@ footer ul li {
 	float: right;
 	margin: 0 5px;
 }
+
+/* Tipografia
+-----------------------------*/
+h1 {
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: white;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	color: white;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+p, li {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.btn-custom {
+		margin: 10px 15px;
+		font-size: 1em;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 3em;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
+}
+
+
